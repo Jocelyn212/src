@@ -6,67 +6,126 @@ import Header from "../components/Header.astro";
 <Layout title="Welcome to EFC" />
 <Header />
 
-<main id="#home" class="p-8 bg-slate-950 text-gray-400">
+<main id="#home" class="px-24 bg-slate-950">
 	<section class="mb-8">
-		<h1 class="text-2xl font-bold mb-4">Who are we?</h1>
-		<div class="flex w-full">
-			<div class="w-1/2 gap-10">
-				<p class="text-left">
+		<h1 class="text-2xl font-bold mb-4 text-gray-300 text-center">
+			Who are we?
+		</h1>
+		<div class="flex w-full gap-16">
+			<div class="w-1/2 gap-10 text-left text-lg text-gray-400">
+				<p class="pb-2">
 					We are a proud family business spanning four generations of
 					skilled carpenters. For years, we’ve been dedicated to the
 					art of concrete forming and carpentry, bringing
 					craftsmanship and experience to every project we take on.
 				</p>
-				<p>
+				<p class="pb-2">
 					Today, our father-and-sons team works side by side to
 					deliver excellence, with a focus on Quality, Safety, and
 					Productivity.
 				</p>
-				<p>
+				<p class="pb-2">
 					Our mission? To exceed your expectations and create results
 					that stand the test of time.
 				</p>
 			</div>
 			<div class="flex">
-				<div class="h-20 w-24 border rounded-lg">
+				<div class="h-24 w-28 border rounded-lg m-4">
 					<img src="" alt="" />
 				</div>
-				<div class="h-20 w-24 border rounded-lg">2</div>
-				<div class="h-20 w-24 border rounded-lg">3</div>
+				<div class="h-24 w-28 border rounded-lg m-4">2</div>
+				<div class="h-24 w-28 border rounded-lg m-4">3</div>
 			</div>
 		</div>
 	</section>
-	<section id="services" class="mb-8">
-		<h2 class="text-xl font-bold mb-4">What services do we offer?</h2>
-		<p>
-			We are specialized in Hi-rise, Mid-Rise and Low Rise, commercial and
-			residential construction. Always with a top-quality concrete and
-			carpentry work.
-		</p>
-		<p>Offering services such as:</p>
-		<ul class="list-disc list-inside">
-			<li>Exposed concrete finishes</li>
-			<li>Foundation building</li>
-			<li>Concrete slabs and stairs</li>
-			<li>Retaining walls with custom concrete designs</li>
-			<li>Drywall</li>
-			<li>House Framing</li>
-		</ul>
-		<p>
-			On the carpentry side, we bring our expertise to building homes,
-			fences, decks, and more—providing both beauty and durability.
-		</p>
+	<section id="services" class="mb-8 text-gray-400 text-lg">
+		<h2 class="text-3xl text-center font-bold mb-4 text-gray-300">
+			What services do we offer?
+		</h2>
+
+		<!-- SEGUNDA SECCION -->
+		<div class="flex w-full gap-16">
+			<div class="flex flex-wrap w-1/2">
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183549/Im%C3%A1genes%20de%20proyectos/web-mati/xm4m8wcqenwkgwerqwn8.jpg"
+						alt=""
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/vvi3pf5bloyfsfdznplv.jpg"
+						alt=""
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/mwvrfaict2ofqmpwnqms.jpg"
+						alt=""
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/prnbzwn3bl2axf7gwgkj.jpg"
+						alt=""
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/z4xujpfjnyykhlpbvfku.jpg"
+						alt=""
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+				<div class="h-36 w-1/3 border rounded-lg m-4">
+					<img
+						src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/tayzpwj2tud2vujxgefp.jpg"
+						alt=" "
+						class="w-full h-full object-cover rounded-lg"
+					/>
+				</div>
+			</div>
+			<div class="w-1/2 text-right text-lg text-gray-400">
+				<p class="pb-2">
+					We are specialized in Hi-rise, Mid-Rise and Low Rise,
+					commercial and residential construction. Always with a
+					top-quality concrete and carpentry work.
+				</p>
+				<h3 class="pb-2 text-lg font-semibold text-gray-300">
+					Offering services such as:
+				</h3>
+				<ul class="list-disc list-inside pb-2">
+					<li class="pb-2">Exposed concrete finishes</li>
+					<li class="pb-2">Foundation building</li>
+					<li class="pb-2">Concrete slabs and stairs</li>
+					<li class="pb-2">
+						Retaining walls with custom concrete designs
+					</li>
+					<li class="pb-2">Drywall</li>
+					<li class="pb-2">House Framing</li>
+				</ul>
+				<p>
+					On the carpentry side, we bring our expertise to building
+					homes, fences, decks, and more—providing both beauty and
+					durability.
+				</p>
+			</div>
+		</div>
 	</section>
-	<section class="mb-8">
-		<h2 class="text-xl font-bold mb-4">About us</h2>
+	<section class="mb-8 text-gray-400">
+		<h2 class="text-xl font-bold mb-4 text-center">About us</h2>
 		<p>
 			We’re proudly based in the GTA and serve all of Ontario. When you
 			work with us, you’re not just hiring contractors—you’re partnering
 			with a family that’s passionate about what we do.
 		</p>
 	</section>
-	<section id="contact" class="mb-8">
-		<h2 class="text-xl font-bold mb-4">Contact Information</h2>
+	<section id="contact" class="mb-8 text-gray-400">
+		<h2 class="text-xl font-bold mb-4 text-center">Contact Information</h2>
 		<p>
 			Website: <a
 				href="http://www.ExtremeformingInc.com"
@@ -115,5 +174,4 @@ import Header from "../components/Header.astro";
 	html {
 		scroll-behavior: smooth;
 	}
-	
 </style>
