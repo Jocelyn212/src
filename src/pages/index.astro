@@ -3,116 +3,111 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 ---
 
-<Layout title="Welcome to EFC	">
-	
-		</Layout>
-		<Header />
-				
-		<main class="p-8">
-			<section class="mb-8">
-				<h1 class="text-2xl font-bold mb-4">Who are we?</h1>
-				<p>
-					We are a proud family business spanning four generations of
-					skilled carpenters...
-				</p>
-				<!-- Resto del texto -->
-			</section>
-			<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-				<div>
-					<h2 class="text-xl font-bold mb-4">
-						What services do we offer?
-					</h2>
-					<ul class="list-disc list-inside">
-						<li>Exposed concrete finishes</li>
-						<li>Foundation building</li>
-						<li>Concrete slabs and stairs</li>
-						<li>Retaining walls with custom concrete designs</li>
-					</ul>
-					<p>
-						On the carpentry side, we bring our expertise to
-						building homes, fences, decks, and more...
-					</p>
-				</div>
-				<div>
-					<!-- <img
-						src="/src/public/Vector.png"
-						alt="Service Image 1"
-						class="w-full h-auto"
-					/>
-					<img
-						src="/path/to/image2.jpg"
-						alt="Service Image 2"
-						class="w-full h-auto mt-4"
-					/>
-					<img
-						src="/path/to/image3.jpg"
-						alt="Service Image 3"
-						class="w-full h-auto mt-4"
-					/> -->
-				</div>
-			</section>
-		</main>
-	</body>
-</Layout>
+<Layout title="Welcome to EFC" />
+<Header />
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+<main class="p-8 bg-slate-950 text-gray-400">
+	<section class="mb-8">
+		<h1 class="text-2xl font-bold mb-4">Who are we?</h1>
+		<div class="flex w-full">
+			<div class="w-1/2 gap-10">
+				<p class="text-left">
+					We are a proud family business spanning four generations of
+					skilled carpenters. For years, we’ve been dedicated to the
+					art of concrete forming and carpentry, bringing
+					craftsmanship and experience to every project we take on.
+				</p>
+				<p>
+					Today, our father-and-sons team works side by side to
+					deliver excellence, with a focus on Quality, Safety, and
+					Productivity.
+				</p>
+				<p>
+					Our mission? To exceed your expectations and create results
+					that stand the test of time.
+				</p>
+			</div>
+			<div class="flex">
+				<div class="h-20 w-24 border rounded-lg">
+					<img src="" alt="" />
+				</div>
+				<div class="h-20 w-24 border rounded-lg">2</div>
+				<div class="h-20 w-24 border rounded-lg">3</div>
+			</div>
+		</div>
+	</section>
+	<section class="mb-8">
+		<h2 class="text-xl font-bold mb-4">What services do we offer?</h2>
+		<p>
+			We are specialized in Hi-rise, Mid-Rise and Low Rise, commercial and
+			residential construction. Always with a top-quality concrete and
+			carpentry work.
+		</p>
+		<p>Offering services such as:</p>
+		<ul class="list-disc list-inside">
+			<li>Exposed concrete finishes</li>
+			<li>Foundation building</li>
+			<li>Concrete slabs and stairs</li>
+			<li>Retaining walls with custom concrete designs</li>
+			<li>Drywall</li>
+			<li>House Framing</li>
+		</ul>
+		<p>
+			On the carpentry side, we bring our expertise to building homes,
+			fences, decks, and more—providing both beauty and durability.
+		</p>
+	</section>
+	<section class="mb-8">
+		<h2 class="text-xl font-bold mb-4">About us</h2>
+		<p>
+			We’re proudly based in the GTA and serve all of Ontario. When you
+			work with us, you’re not just hiring contractors—you’re partnering
+			with a family that’s passionate about what we do.
+		</p>
+	</section>
+	<section class="mb-8">
+		<h2 class="text-xl font-bold mb-4">Contact Information</h2>
+		<p>
+			Website: <a
+				href="http://www.ExtremeformingInc.com"
+				class="text-blue-500">www.ExtremeformingInc.com</a
+			>
+		</p>
+		<p>
+			Email: <a
+				href="mailto:ExtremeformingInc@outlook.com"
+				class="text-blue-500">ExtremeformingInc@outlook.com</a
+			>
+		</p>
+		<p>Phone: +1 647 673 1582</p>
+	</section>
+	<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+		<!-- <div>
+			<img
+				src="/path/to/image1.jpg"
+				alt="Service Image 1"
+				class="w-full h-auto"
+			/>
+			<img
+				src="/path/to/image2.jpg"
+				alt="Service Image 2"
+				class="w-full h-auto mt-4"
+			/>
+			<img
+				src="/path/to/image3.jpg"
+				alt="Service Image 3"
+				class="w-full h-auto mt-4"
+			/>
+			<img
+				src="/path/to/image4.jpg"
+				alt="Service Image 4"
+				class="w-full h-auto mt-4"
+			/>
+			<img
+				src="/path/to/image5.jpg"
+				alt="Service Image 5"
+				class="w-full h-auto mt-4"
+			/>
+		</div> -->
+	</section>
+</main>
