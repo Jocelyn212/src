@@ -6,7 +6,7 @@ import Header from "../components/Header.astro";
 <Layout title="Welcome to EFC" />
 <Header />
 
-<main class="p-8 bg-slate-950 text-gray-400">
+<main id="#home" class="p-8 bg-slate-950 text-gray-400">
 	<section class="mb-8">
 		<h1 class="text-2xl font-bold mb-4">Who are we?</h1>
 		<div class="flex w-full">
@@ -36,7 +36,7 @@ import Header from "../components/Header.astro";
 			</div>
 		</div>
 	</section>
-	<section class="mb-8">
+	<section id="services" class="mb-8">
 		<h2 class="text-xl font-bold mb-4">What services do we offer?</h2>
 		<p>
 			We are specialized in Hi-rise, Mid-Rise and Low Rise, commercial and
@@ -65,7 +65,7 @@ import Header from "../components/Header.astro";
 			with a family that’s passionate about what we do.
 		</p>
 	</section>
-	<section class="mb-8">
+	<section id="contact" class="mb-8">
 		<h2 class="text-xl font-bold mb-4">Contact Information</h2>
 		<p>
 			Website: <a
@@ -111,3 +111,9 @@ import Header from "../components/Header.astro";
 		</div> -->
 	</section>
 </main>
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+	
+</style>
