@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SectionDos from "../components/SectionDos.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Welcome to EFC" />
+<Header />
+
+<main class="px-6 md:px-24">
+    <section id="#home" class="mb-8">
+        <h1 class="text-2xl font-bold mb-4 text-gray-300 text-center">
+            Who are we?
+        </h1>
+        <div class="lg:flex gap-16">
+            <div
+                class="w-full flex flex-col gap-4 text-lg text-justify text-gray-400 m-auto lg:text-left w-1/2"
+            >
+                <p class="pb-2">
+                    We are a proud family business spanning four generations of
+                    skilled carpenters. For years, we’ve been dedicated to the
+                    art of concrete forming and carpentry, bringing
+                    craftsmanship and experience to every project we take on.
+                </p>
+                <p class="pb-2">
+                    Today, our father-and-sons team works side by side to
+                    deliver excellence, with a focus on Quality, Safety, and
+                    Productivity.
+                </p>
+                <p class="pb-2">
+                    Our mission? To exceed your expectations and create results
+                    that stand the test of time.
+                </p>
+            </div>
+            <!-- imagenes -->
+            <div class="container-img">
+                <div class="h-26 w-28 rounded-lg m-4">
+                    <img
+                        src="https://i.pravatar.cc/150?img=57"
+                        alt=""
+                        class="h-26 w-28 border rounded-lg"
+                    />
+                </div>
+                <div class="h-26 w-28 border rounded-lg m-4 text-white">
+                    <img
+                        src="https://i.pravatar.cc/150?img=57"
+                        alt=""
+                        class="h-26 w-28 border rounded-lg"
+                    />
+                </div>
+                <div class="h-26 w-28 border rounded-lg m-4">
+                    <img
+                        src="https://i.pravatar.cc/150?img=57"
+                        alt=""
+                        class="h-26 w-28 border rounded-lg"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEGUNDA SECCION -->
+    <section id="services" class="mb-8 text-gray-400 text-lg">
+        <h2 class="text-3xl text-center font-bold mb-4 text-gray-300 pb-6">
+            What services do we offer?
+        </h2>
+        <SectionDos />
+
+        <section id="contact" class="mb-8 text-gray-400">
+            <h2 class="text-xl font-bold mb-4 text-center">
+                Contact Information
+            </h2>
+            <p>
+                Website: <a
+                    href="http://www.ExtremeformingInc.com"
+                    class="text-blue-500">www.ExtremeformingInc.com</a
+                >
+            </p>
+            <p>
+                Email: <a
+                    href="mailto:ExtremeformingInc@outlook.com"
+                    class="text-blue-500">ExtremeformingInc@outlook.com</a
+                >
+            </p>
+            <p>Phone: +1 647 673 1582</p>
+        </section>
+    </section>
+    <Footer />
+</main>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* @media (max-width: 768px) {
+        .container-img {
+            flex-direction: column;
+        }
+    } */
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 4rem; /* 16 * 0.25rem = 4rem */
+    }
+
+    @media (min-width: 768px) {
+        .principal {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+</style>

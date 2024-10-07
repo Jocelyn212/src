@@ -1,0 +1,148 @@
+<div class="principal">
+    <div class="container-texto">
+        <p class="pb-2">
+            We are specialized in Hi-rise, Mid-Rise and Low Rise, commercial and
+            residential construction. Always with a top-quality concrete and
+            carpentry work.
+        </p>
+        <h3 class="pb-2 text-lg font-semibold text-gray-300">
+            Offering services such as:
+        </h3>
+        <ul class="list-disc list-inside pb-2">
+            <li class="pb-2">Exposed concrete finishes</li>
+            <li class="pb-2">Foundation building</li>
+            <li class="pb-2">Concrete slabs and stairs</li>
+            <li class="pb-2">Retaining walls with custom concrete designs</li>
+            <li class="pb-2">Drywall</li>
+            <li class="pb-2">House Framing</li>
+        </ul>
+        <p>
+            On the carpentry side, we bring our expertise to building homes,
+            fences, decks, and more—providing both beauty and durability.
+        </p>
+    </div>
+    <div class="container-img">
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183549/Im%C3%A1genes%20de%20proyectos/web-mati/xm4m8wcqenwkgwerqwn8.jpg"
+                alt=""
+                class="image"
+            />
+        </div>
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/vvi3pf5bloyfsfdznplv.jpg"
+                alt=""
+                class="image"
+            />
+        </div>
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/mwvrfaict2ofqmpwnqms.jpg"
+                alt=""
+                class="image"
+            />
+        </div>
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/prnbzwn3bl2axf7gwgkj.jpg"
+                alt=""
+                class="image"
+            />
+        </div>
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/z4xujpfjnyykhlpbvfku.jpg"
+                alt=""
+                class="image"
+            />
+        </div>
+        <div class="image-wrapper">
+            <img
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1728183550/Im%C3%A1genes%20de%20proyectos/web-mati/tayzpwj2tud2vujxgefp.jpg"
+                alt=" "
+                class="image"
+            />
+        </div>
+    </div>
+</div>
+
+<style>
+    .principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem; /* 16 * 0.25rem = 4rem */
+    }
+
+    .container-img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-wrapper {
+        height: 9rem; /* 36 * 0.25rem = 9rem */
+        width: 100%;
+        border: 1px solid #e5e7eb; /* Tailwind's border color */
+        border-radius: 0.5rem; /* Tailwind's rounded-lg */
+        margin: 1rem; /* Tailwind's m-4 */
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    }
+
+    .container-texto {
+        width: 100%;
+        text-align:justify;
+        font-size: 1.125rem; /* Tailwind's text-lg */
+        color: #9ca3af; /* Tailwind's text-gray-400 */
+    }
+
+    .container-texto h3 {
+        font-size: 1.125rem; /* Tailwind's text-lg */
+        font-weight: 600; /* Tailwind's font-semibold */
+        color: #d1d5db; /* Tailwind's text-gray-300 */
+    }
+
+    .container-texto ul {
+        list-style-type: disc;
+        padding-left: 1rem; /* Tailwind's list-inside */
+    }
+
+    .container-texto li {
+        padding-bottom: 0.5rem; /* Tailwind's pb-2 */
+    }
+
+    @media (min-width: 768px) {
+        .principal {
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .principal {
+            flex-direction: row;
+        }
+
+        .container-texto {
+            width: 50%;
+            text-align: left;
+        }
+
+        .container-img {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem; /* Tailwind's gap-4 */
+        }
+
+        .image-wrapper {
+            width: 100%;
+        }
+    }
+</style>
